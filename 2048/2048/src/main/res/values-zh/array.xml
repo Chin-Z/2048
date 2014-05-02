@@ -2,16 +2,34 @@
 <resources>
     <string-array name="setting_mode_entries">
         <item>2048</item>
+        <item>4096</item>
         <item>@string/setting_mode_histroy</item>
+        <item>@string/setting_mode_elements</item>
+        <item>@string/setting_mode_animal</item>
+        <item>@string/setting_mode_educationalbackgroud</item>
+        <item>@string/setting_mode_car</item>
+        <item>@string/setting_mode_limit</item>
     </string-array>
 
     <string-array name="setting_mode_value">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
     </string-array>
 
     <string-array name="mode_entries">
-        <item>2|4|8|16|32|64|128|256|512|1024|2048</item>
-        <item>夏|商|周|秦|汉|三国|晋|南朝|北朝|隋|唐|五代|十国|宋|元|明|清|民国|PRC</item>
+        <item>2 4 8 16 32 64 128 256 512 1024 2048</item>
+        <item>2 4 8 16 32 64 128 256 512 1024 2048 4096</item>
+        <item>夏 商 周 秦 汉 三国 晋 南朝 北朝 隋 唐 五代 十国 宋 元 明 清 民国 PRC</item>
+        <item>H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca</item>
+        <item>鼠 牛 虎 兔 龙 蛇 马 羊 猴 鸡 狗 猪</item>
+        <item>幼儿 小学 初中 高中 大学 专科 本科 研生 硕士 博士 教授 院士</item>
+        <item>奥拓 比亚迪 长安 奇瑞 大众 奥迪 宝马 捷豹 奔驰 布加迪 保时捷 幻影</item>
+        <item>2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216 33554432 67108864 134217728 268435456 536870912 1073741824 2147483648</item>
     </string-array>
 </resources>

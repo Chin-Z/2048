@@ -20,4 +20,9 @@
     <string name="pref_playmode_key">pref_playmode_key</string>
     <string name="pref_playmode_title">Mode</string>
     <string name="setting_mode_histroy">Histroy</string>
+    <string name="setting_mode_elements">Elements(20)</string>
+    <string name="setting_mode_animal">Animal</string>
+    <string name="setting_mode_educationalbackgroud">EducationalBackgroud</string>
+    <string name="setting_mode_car">Car</string>
+    <string name="setting_mode_limit">Limit 2147483648</string>
 </resources>

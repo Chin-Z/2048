@@ -20,7 +20,7 @@ public class MainView extends View {
     Paint paint = new Paint();
     public MainGame game;
     public boolean hasSaveState = false;
-    public final int numCellTypes = 18;
+    public final int numCellTypes = 32;
     public boolean continueButtonEnabled = false;
 
     //Layout variables
@@ -400,7 +400,7 @@ public class MainView extends View {
     private void createBitmapCells() {
         paint.setTextAlign(Paint.Align.CENTER);
         Resources resources = getResources();
-        for (int xx = 0; xx < bitmapCell.length; xx++) {
+        for (int xx = 0; xx < tileTexts.length - 1; xx++) {
             paint.setTextSize(cellTextSize);
             float tempTextSize = cellTextSize * cellSize * 0.9f / Math.max(cellSize * 0.9f, paint.measureText("0000"));
             paint.setTextSize(tempTextSize);
@@ -507,7 +507,7 @@ public class MainView extends View {
         //These code took form PeterCxy's 2048
         int mode = prefs.getInt(Common.KEY_MODE , 0);
         String[] modeEntries = resources.getStringArray(R.array.mode_entries);
-        tileTexts = modeEntries[mode].split("\\|");
+        tileTexts = modeEntries[mode].split(" ");
 
         //Loading resources
         game = new MainGame(context, this);
