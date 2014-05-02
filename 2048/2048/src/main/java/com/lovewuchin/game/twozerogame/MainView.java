@@ -400,7 +400,7 @@ public class MainView extends View {
     private void createBitmapCells() {
         paint.setTextAlign(Paint.Align.CENTER);
         Resources resources = getResources();
-        for (int xx = 0; xx < tileTexts.length; xx++) {
+        for (int xx = 1; xx < tileTexts.length + 1; xx++) {
             paint.setTextSize(cellTextSize);
             float tempTextSize = cellTextSize * cellSize * 0.9f / Math.max(cellSize * 0.9f, paint.measureText("0000"));
             paint.setTextSize(tempTextSize);
@@ -506,7 +506,7 @@ public class MainView extends View {
         //Costomize
         boolean cosCheck = prefs.getBoolean(Common.KEY_COSTOMIZE, false);
         String cos = prefs.getString(Common.KEY_COSTOMIZE_EDIT, "");
-        String[] cosArray = cos.split("");
+        String[] cosArray = cos.split(" ");
 
 
         //These code took form PeterCxy's 2048

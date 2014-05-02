@@ -96,7 +96,7 @@ public class MainGame {
         } else {
             for (int xx = 0; xx < MainGame.numSquaresX; xx++) {
                 for(int yy = 0; yy < MainGame.numSquaresY; yy++) {
-                    Tile tile = new Tile(xx , yy , (int) Math.pow(2, MainView.tileTexts.length - 2));
+                    Tile tile = new Tile(xx , yy , (int) Math.pow(2, MainView.tileTexts.length - 1));
                     spawnTile(tile);
                 }
             }
