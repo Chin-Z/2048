@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting_mode_entries">
+        <item>2048</item>
+        <item>@string/setting_mode_histroy</item>
+    </string-array>
+
+    <string-array name="setting_mode_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="mode_entries">
+        <item>2|4|8|16|32|64|128|256|512|1024|2048</item>
+        <item>夏|商|周|秦|汉|三国|晋|南朝|北朝|隋|唐|五代|十国|宋|元|明|清|民国|PRC</item>
+    </string-array>
+</resources>

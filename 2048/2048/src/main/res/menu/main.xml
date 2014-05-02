@@ -1,6 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.tpcstld.twozerogame.MainActivity" >
+    tools:context="com.lovewuchin.game.twozerogame.MainActivity" >
 
+    <item android:id="@+id/setting"
+          android:title="@string/setting_title"
+          android:showAsAction="never"/>
 </menu>

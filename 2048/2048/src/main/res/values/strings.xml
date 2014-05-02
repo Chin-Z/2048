@@ -15,4 +15,9 @@
     <string name="go_on">Tap to Continue</string>
     <string name="for_now">For now...</string>
     <string name="endless">"Endless" Mode</string>
+    <string name="setting_title">Settings</string>
+    
+    <string name="pref_playmode_key">pref_playmode_key</string>
+    <string name="pref_playmode_title">Mode</string>
+    <string name="setting_mode_histroy">Histroy</string>
 </resources>
