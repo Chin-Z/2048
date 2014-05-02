@@ -15,8 +15,15 @@
     <string name="for_now">For now...</string>
     <string name="endless">无尽模式</string>
     <string name="setting_title">设置</string>
+    <string name="msg">重启应用更改</string>
 
     <string name="pref_playmode_title">游戏模式</string>
+    <string name="pref_variety_titile">一步登天</string>
+    <string name="pref_costomize_title">自定义模式</string>
+    <string name="pref_costomize_screen">自定义选项</string>
+    <string name="pref_costomize_editview_title">输入自定义玩法</string>
+    <string name="pref_costomize_editview_summary">最多输入10个.输入范例：1 2 3 4 5 6 7 8 9</string>
+
     <string name="setting_mode_histroy">历史朝代</string>
     <string name="setting_mode_elements">元素周期表(前20)</string>
     <string name="setting_mode_animal">生肖</string>

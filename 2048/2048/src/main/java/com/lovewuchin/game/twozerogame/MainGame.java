@@ -53,6 +53,8 @@ public class MainGame {
     private long bufferScore = 0;
     private int bufferGameState = 0;
 
+    private SharedPreferences prefs;
+
     private Context mContext;
 
     private MainView mView;
@@ -60,6 +62,7 @@ public class MainGame {
     public MainGame(Context context, MainView view) {
         mContext = context;
         mView = view;
+        prefs = context.getSharedPreferences(Common.KEY_PREFERENCE , Context.MODE_WORLD_READABLE);
         endingMaxValue = (int) Math.pow(2, view.numCellTypes - 1);
     }
 
@@ -86,8 +89,17 @@ public class MainGame {
     }
 
     private void addStartTiles() {
-        for (int xx = 0; xx < startTiles; xx++) {
-            this.addRandomTile();
+        if(!prefs.getBoolean(Common.KEY_VARIETY , false)) {
+            for (int xx = 0; xx < startTiles; xx++) {
+                this.addRandomTile();
+            }
+        } else {
+            for (int xx = 0; xx < MainGame.numSquaresX; xx++) {
+                for(int yy = 0; yy < MainGame.numSquaresY; yy++) {
+                    Tile tile = new Tile(xx , yy , (int) Math.pow(2, MainView.tileTexts.length - 2));
+                    spawnTile(tile);
+                }
+            }
         }
     }
 

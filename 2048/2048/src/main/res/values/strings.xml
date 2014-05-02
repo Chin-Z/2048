@@ -16,9 +16,19 @@
     <string name="for_now">For now...</string>
     <string name="endless">"Endless" Mode</string>
     <string name="setting_title">Settings</string>
+    <string name="msg">Reboot to Apply changes</string>
     
     <string name="pref_playmode_key">pref_playmode_key</string>
     <string name="pref_playmode_title">Mode</string>
+    <string name="pref_variety_key">pref_variety_key</string>
+    <string name="pref_variety_titile">One turn to sucess</string>
+    <string name="pref_costomize_title">Costomize Mode</string>
+    <string name="pref_costomize_screen">Costomize Options</string>
+    <string name="pref_costomize_key">pref_costomize_key</string>
+    <string name="pref_costomize_editview_key">pref_costomize_editview_key</string>
+    <string name="pref_costomize_editview_title">Enter Costom Mode</string>
+    <string name="pref_costomize_editview_summary">Enter 10 charecter</string>
+
     <string name="setting_mode_histroy">Histroy</string>
     <string name="setting_mode_elements">Elements(20)</string>
     <string name="setting_mode_animal">Animal</string>

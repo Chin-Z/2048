@@ -87,7 +87,7 @@ public class MainView extends View {
 
     boolean refreshLastTime = true;
 
-    String[] tileTexts;
+    public static String[] tileTexts;
 
     static final int BASE_ANIMATION_TIME = 100000000;
 
@@ -148,7 +148,7 @@ public class MainView extends View {
         } else {
             paint.setColor(TEXT_BLACK);
         }
-        canvas.drawText(tileTexts[value], sX + cellSize / 2, sY + cellSize / 2 - textShiftY, paint);
+        canvas.drawText(tileTexts[value - 1], sX + cellSize / 2, sY + cellSize / 2 - textShiftY, paint);
     }
 
     private void drawScoreText(Canvas canvas) {
@@ -400,7 +400,7 @@ public class MainView extends View {
     private void createBitmapCells() {
         paint.setTextAlign(Paint.Align.CENTER);
         Resources resources = getResources();
-        for (int xx = 0; xx < tileTexts.length - 1; xx++) {
+        for (int xx = 0; xx < tileTexts.length; xx++) {
             paint.setTextSize(cellTextSize);
             float tempTextSize = cellTextSize * cellSize * 0.9f / Math.max(cellSize * 0.9f, paint.measureText("0000"));
             paint.setTextSize(tempTextSize);
@@ -503,11 +503,20 @@ public class MainView extends View {
         prefs = context.getSharedPreferences(Common.KEY_PREFERENCE , Context.MODE_WORLD_READABLE);
         Resources resources = context.getResources();
 
+        //Costomize
+        boolean cosCheck = prefs.getBoolean(Common.KEY_COSTOMIZE, false);
+        String cos = prefs.getString(Common.KEY_COSTOMIZE_EDIT, "");
+        String[] cosArray = cos.split("");
+
 
         //These code took form PeterCxy's 2048
         int mode = prefs.getInt(Common.KEY_MODE , 0);
         String[] modeEntries = resources.getStringArray(R.array.mode_entries);
-        tileTexts = modeEntries[mode].split(" ");
+        if(!cosCheck) {
+            tileTexts = modeEntries[mode].split(" ");
+        } else {
+            tileTexts = cosArray;//costom array
+        }
 
         //Loading resources
         game = new MainGame(context, this);

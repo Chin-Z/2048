@@ -7,4 +7,19 @@
                     android:entries="@array/setting_mode_entries"
                     android:entryValues="@array/setting_mode_value"/>
 
+    <CheckBoxPreference android:key="@string/pref_variety_key"
+                        android:title="@string/pref_variety_titile"
+                        android:checked="false"/>
+
+    <CheckBoxPreference android:key="@string/pref_costomize_key"
+                        android:title="@string/pref_costomize_title"
+                        android:checked="false"/>
+
+    <PreferenceScreen android:title="@string/pref_costomize_screen"
+                      android:dependency="@string/pref_costomize_key">
+        <EditTextPreference android:key="@string/pref_costomize_editview_key"
+                            android:title="@string/pref_costomize_editview_title"
+                            android:summary="@string/pref_costomize_editview_summary"/>
+    </PreferenceScreen>
+
 </PreferenceScreen>
